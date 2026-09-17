@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beautiful live digital clock for cities and time zones around the world." />
+  <title>World Clock — Follow Through</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="World Clock home">
+        <span class="brand-mark">FT</span>
+        <span>WORLD CLOCK</span>
+      </a>
+      <div class="topbar-meta">
+        <span class="live-dot" aria-hidden="true"></span>
+        <span>LIVE WORLD TIME</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Keep moving, wherever you are</p>
+      <h1>Time is your<br /><em>advantage.</em></h1>
+      <p class="hero-copy">Track the moment across the cities that keep the world moving.</p>
+      <div class="hero-time" id="hero-time" aria-live="polite">--:--:--</div>
+      <p class="hero-date" id="hero-date">Loading local time…</p>
+    </section>
+
+    <section class="controls" aria-label="Clock controls">
+      <label class="search-wrap">
+        <span class="sr-only">Search cities</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" /></svg>
+        <input id="search" type="search" placeholder="Search cities or time zones" autocomplete="off" />
+      </label>
+      <button class="add-button" id="add-zone" type="button"><span>+</span> Add city</button>
+    </section>
+
+    <section class="clock-grid" id="clock-grid" aria-label="World clocks"></section>
+
+    <footer>
+      <span>FOLLOW THROUGH / WORLD CLOCK</span>
+      <span>Built for every time zone.</span>
+    </footer>
+  </main>
+
+  <dialog id="zone-dialog">
+    <form method="dialog" class="dialog-card" id="zone-form">
+      <button class="close-button" value="cancel" aria-label="Close dialog">×</button>
+      <p class="eyebrow">Expand your map</p>
+      <h2>Add a city</h2>
+      <label for="zone-select">Choose a time zone</label>
+      <select id="zone-select"></select>
+      <button class="primary-button" value="default">Add to clocks</button>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
