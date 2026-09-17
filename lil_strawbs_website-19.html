@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lil Strawbs 🍓</title>
+<meta name="description" content="Lil Strawbs — sweet, fruity strawberry treats for just £1.20. Order online or via WhatsApp.">
+<style>
+:root{--red:#e51b2f;--dark:#8f0d1b;--pink:#fff0f2;--cream:#fffaf5;--green:#27843f}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:#351216}
+header{position:sticky;top:0;z-index:5;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:16px 7%;box-shadow:0 2px 15px #00000012}
+.logo{font-weight:900;font-size:25px;color:var(--red);letter-spacing:-1px}.logo span{font-size:20px}
+nav a{color:#351216;text-decoration:none;margin-left:22px;font-weight:700}
+.hero{min-height:590px;display:flex;align-items:center;justify-content:space-between;gap:40px;padding:70px 8%;background:linear-gradient(135deg,#fff 0%,#fff0f2 65%,#ffdce1 100%);overflow:hidden}
+.hero-copy{max-width:600px}.eyebrow{color:var(--red);font-weight:900;text-transform:uppercase;letter-spacing:2px}
+h1{font-size:clamp(55px,9vw,100px);line-height:.85;margin:15px 0;color:var(--dark);letter-spacing:-5px}
+h1 em{color:var(--red);font-style:normal}.hero p{font-size:20px;line-height:1.5;max-width:520px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:15px 22px;border-radius:999px;text-decoration:none;font-weight:900}.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:var(--red);border:2px solid var(--red)}
+.strawberry{width:min(370px,75vw);aspect-ratio:1;display:grid;place-items:center;font-size:180px;background:#fff;border-radius:50%;box-shadow:0 25px 70px #b20e2528;transform:rotate(-8deg)}
+section{padding:75px 8%}.center{text-align:center}h2{font-size:44px;margin:0 0 12px;color:var(--dark)}.sub{color:#70444a;font-size:18px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:38px}.card{background:#fff;border-radius:25px;padding:28px;box-shadow:0 8px 30px #0000000d}.icon{font-size:50px}.card h3{font-size:24px;margin:15px 0 8px}
+.shop{background:var(--red);color:#fff;border-radius:35px;padding:45px;display:flex;align-items:center;justify-content:space-between;gap:25px}.shop h2{color:#fff}.price{font-size:52px;font-weight:900;margin:10px 0}.orderbox{background:#fff;color:#351216;border-radius:25px;padding:28px;min-width:300px}.orderbox label{display:block;font-weight:800;margin-bottom:7px}.orderbox input{width:100%;padding:13px;border:1px solid #ddd;border-radius:12px;margin-bottom:15px;font-size:16px}.qty{display:flex;align-items:center;gap:10px}.qty input{margin:0;width:90px}.wa{display:block;background:var(--green);color:#fff;text-align:center;padding:14px;border-radius:12px;text-decoration:none;font-weight:900;margin-top:10px}
+.notice{margin-top:25px;font-size:14px;opacity:.8}footer{background:#30080d;color:#fff;padding:35px 8%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#fff}
+@media(max-width:750px){nav{display:none}.hero{flex-direction:column;text-align:center;padding-top:55px}.hero p{margin-left:auto;margin-right:auto}.strawberry{font-size:130px}.cards{grid-template-columns:1fr}.shop{flex-direction:column;align-items:stretch;padding:30px}.orderbox{min-width:0}section{padding:55px 6%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🍓 LIL STRAWBS</div>
+  <nav><a href="#shop">Shop</a><a href="#about">About</a><a href="#order">Order</a></nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">Sweet. Fruity. Lil.</div>
+    <h1>LIL <em>STRAWBS</em> 🍓</h1>
+    <p>Big strawberry flavour in every little bag. Grab your Lil Strawbs for just <strong>£1.20</strong>.</p>
+    <div class="buttons"><a class="btn primary" href="#shop">Shop Lil Strawbs</a><a class="btn secondary" href="#order">Order on WhatsApp</a></div>
+  </div>
+  <div class="strawberry" aria-label="Strawberry">🍓</div>
+</section>
+
+<section id="about" class="center">
+  <h2>Why Lil Strawbs?</h2><p class="sub">Your next little sweet treat.</p>
+  <div class="cards">
+    <div class="card"><div class="icon">🏆</div><h3>Champion Chews</h3><p>Our classic <strong>normal strawberry gummies</strong> — sweet, fruity and full of strawberry flavour.</p><div style="margin-top:18px;font-weight:900;color:var(--red)">£1.20</div></div>
+    <div class="card"><div class="icon">💀</div><h3>Halloween 2026 Skull Sweets</h3><p>Spooky skull-shaped gummies with a <strong>sour</strong> strawberry-style kick.</p><div style="margin-top:18px;font-weight:900;color:var(--red)">£1.20</div></div>
+    <div class="card"><div class="icon">📦</div><h3>Easy to Order</h3><p>Choose your favourite and order through our website, WhatsApp, or pick them up in stores.</p></div>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="shop">
+    <div>
+      <h2>Get your Lil Strawbs 🍓</h2>
+      <p>Choose between our classic Champion Chews or the spooky Halloween 2026 Skull Sweets.</p>
+      <div class="price">£1.20</div>
+      <p>Available in stores and online.</p>
+    </div>
+    <div class="orderbox" id="order">
+      <h3>Order online</h3>
+      <label for="qty">Number of bags</label>
+      <div class="qty"><input id="qty" type="number" min="1" value="1" oninput="updateTotal()"><strong id="total">£1.20</strong></div>
+      <a class="btn primary" style="width:100%;text-align:center;margin-top:15px" href="mailto:orders@lilstrawbs.example?subject=Lil%20Strawbs%20Order">Place website order</a>
+      <a class="wa" href="https://wa.me/447368887443?text=Hi%20Lil%20Strawbs!%20I%27d%20like%20to%20order%20Lil%20Strawbs." target="_blank">💬 Order on WhatsApp</a>
+      <div class="notice">Replace the example email and WhatsApp link with your real order details before publishing.</div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><strong>🍓 LIL STRAWBS</strong><span>Small sweets. Big strawberry vibes.</span></footer>
+<script>
+function updateTotal(){let q=Math.max(1,parseInt(document.getElementById('qty').value)||1);document.getElementById('total').textContent='£'+(q*1.2).toFixed(2)}
+</script>
+</body>
+</html>
